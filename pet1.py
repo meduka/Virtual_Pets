@@ -12,6 +12,7 @@ class Pet:
         self.direction = 0
         self.is_alive = True
         self.health = 10
+        self.level = 1
 
 
     def eat(self):
@@ -54,8 +55,8 @@ class Pet:
         if train == "y":
             self.level += 1 
             self.strength += 1
-            print(self.name + " has reached level " + self.level + "."\
-                  + self.name + " 's attack points have reached " + self.strength)
+            print(self.name + " has reached level " + str(self.level) + ". "\
+                  + self.name + " 's attack points have reached " + str(self.strength) + ".")
 
 
     def attack(self, other):
